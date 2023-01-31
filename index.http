@@ -1,0 +1,39 @@
+POST http://localhost:3000/api/juegos/deportes HTTP/1.1 
+Content-Type: : application/json
+
+{
+  "id": 3,
+	"titulo": "UFC 23",
+	"jugabilidad": "unjugador",
+	"consola": "xbox",
+	"nivel": "facil",
+	"descargas": 5856
+}
+
+###
+
+PUT http://localhost:3000/api/juegos/deportes/1  HTTP/1.1
+Content-Type: : application/json
+
+{
+  "id": 1,
+  "titulo": "Formula 1",
+	"jugabilidad": "unjugador",
+	"consola": "playstation",
+	"nivel": "facil",
+	"descargas": 58330
+}
+
+###
+
+PATCH http://localhost:3000/api/juegos/deportes/1  HTTP/1.1
+Content-Type: : application/json
+
+{
+  "titulo": "Formula 1 Edicion Deluxe",
+  "descargas": 534627
+}
+
+###
+
+DELETE http://localhost:3000/api/juegos/deportes/1  HTTP/1.1
